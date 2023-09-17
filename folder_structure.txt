@@ -1,0 +1,60 @@
+project-root/
+│
+├── public/
+│   ├── index.html
+│   ├── assets/
+│   │   └── images/
+│   ├── favicon.ico
+│
+├── src/
+│   ├── components/
+│   │   ├── Header/
+│   │   │   ├── Header.js
+│   │   │   ├── Header.css
+│   │
+│   ├── containers/
+│   │   ├── HomeContainer.js
+│   │   ├── UserProfileContainer.js
+│   │
+│   ├── pages/
+│   │   ├── Home/
+│   │   │   ├── HomePage.js
+│   │   │   ├── HomePage.css
+│   │   │
+│   │   ├── UserProfile/
+│   │   │   ├── UserProfilePage.js
+│   │   │   ├── UserProfilePage.css
+│
+│   ├── services/
+│   │   ├── api.js
+│   │   ├── authService.js
+│   │   ├── userService.js
+│
+│   ├── utils/
+│   │   ├── helpers.js
+│   │   ├── constants.js
+│   │   ├── validators.js
+│
+├── store/
+│   ├── actions/
+│   │   ├── userActions.js
+│   │
+│   ├── reducers/
+│   │   ├── userReducer.js
+│   │
+│   ├── store.js
+│
+├── styles/
+│   ├── global.css
+│   ├── variables.css
+│
+├── tests/
+│   ├── unit/
+│   ├── integration/
+│
+├── package.json
+├── README.md
+├── .gitignore
+├── .env
+├── .eslintrc.js
+├── .prettierrc

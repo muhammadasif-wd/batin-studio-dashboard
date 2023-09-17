@@ -1,0 +1,33 @@
+# Folder Structure for a Large React Project
+
+**public**: Contains static files, including the index.html template, images, and other assets. This folder is typically not modified during development.
+
+**src**: This is where your application source code resides.
+
+- **components**: Reusable React components, organized by feature or functionality. Each component folder may contain the component itself along with its styles and tests.
+
+- **containers**: Containers are responsible for connecting components to your data store or for handling complex logic. They are typically associated with a specific page or route in your app.
+
+- **pages**: Each route or major section of your application has its own folder within the pages directory. Inside each page folder, you can have the page component along with its styles and tests.
+
+- **services**: Utility functions and modules for handling API requests, authentication, and other services.
+
+- **utils**: General utility functions, constants, and helper modules that can be reused throughout your project.
+
+- **store**: This is where your Redux or state management code resides. It's organized into actions, reducers, and the store configuration.
+
+- **styles**: Global CSS files and variables that are used throughout the application.
+
+- **tests**: Contains unit and integration tests for your components and other code.
+
+**package.json**: Project metadata and dependencies.
+
+**README.md**: Documentation for your project.
+
+**.gitignore**: List of files and directories to be ignored by Git.
+
+**.env**: Environment variables configuration.
+
+**.eslintrc.js**: ESLint configuration for code linting.
+
+**.prettierrc**: Prettier configuration for code formatting.

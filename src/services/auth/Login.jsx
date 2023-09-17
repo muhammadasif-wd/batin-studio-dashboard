@@ -40,6 +40,7 @@ export default function Login() {
         console.log('authToken :>> ', authToken);
         localStorage.setItem("authToken", authToken);
         ShowAlert("success", success_message)
+        window.location.replace('/')
       } else {
         throw ("Invalid email or password");
       }

@@ -7,6 +7,7 @@ function App() {
   return (
     <Suspense fallback={<Loader />}>
       <Routes>
+
         {
           routes.map(({ path, Component, _id }) =>
             <Route key={_id} path={path} element={<Component />} />

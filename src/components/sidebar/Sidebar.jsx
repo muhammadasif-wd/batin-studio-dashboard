@@ -20,6 +20,7 @@ import {
     Cog6ToothIcon,
     InboxIcon,
     PowerIcon,
+    ArchiveBoxIcon,
 } from "@heroicons/react/24/solid";
 import {
     ChevronRightIcon,
@@ -46,9 +47,6 @@ export default function Sidebar() {
                         Admin
                     </Typography>
                 </div>
-                {/* <div className="p-2">
-                    <Input icon={<MagnifyingGlassIcon className="h-5 w-5" />} label="Search" />
-                </div> */}
                 <List>
                     <Accordion
                         open={open === 1}
@@ -75,19 +73,25 @@ export default function Sidebar() {
                                     <ListItemPrefix>
                                         <ChevronRightIcon strokeWidth={3} className="h-3 w-5" />
                                     </ListItemPrefix>
-                                    Analytics
+                                    About
                                 </ListItem>
                                 <ListItem>
                                     <ListItemPrefix>
                                         <ChevronRightIcon strokeWidth={3} className="h-3 w-5" />
                                     </ListItemPrefix>
-                                    Reporting
+                                    About 2
                                 </ListItem>
                                 <ListItem>
                                     <ListItemPrefix>
                                         <ChevronRightIcon strokeWidth={3} className="h-3 w-5" />
                                     </ListItemPrefix>
-                                    Projects
+                                    Service
+                                </ListItem>
+                                <ListItem>
+                                    <ListItemPrefix>
+                                        <ChevronRightIcon strokeWidth={3} className="h-3 w-5" />
+                                    </ListItemPrefix>
+                                    DopCast | PodCast
                                 </ListItem>
                             </List>
                         </AccordionBody>
@@ -101,29 +105,35 @@ export default function Sidebar() {
                             />
                         }
                     >
-                        {/* <ListItem className="p-0" selected={open === 2}>
+                        <ListItem className="p-0" selected={open === 2}>
                             <AccordionHeader onClick={() => handleOpen(2)} className="border-b-0 p-3">
                                 <ListItemPrefix>
-                                    <ShoppingBagIcon className="h-5 w-5" />
+                                    <ArchiveBoxIcon className="h-5 w-5" />
                                 </ListItemPrefix>
                                 <Typography color="blue-gray" className="mr-auto font-normal">
-                                    E-Commerce
+                                    Projects
                                 </Typography>
                             </AccordionHeader>
-                        </ListItem> */}
+                        </ListItem>
                         <AccordionBody className="py-1">
                             <List className="p-0">
                                 <ListItem>
                                     <ListItemPrefix>
                                         <ChevronRightIcon strokeWidth={3} className="h-3 w-5" />
                                     </ListItemPrefix>
-                                    Orders
+                                    Details Section 1
                                 </ListItem>
                                 <ListItem>
                                     <ListItemPrefix>
                                         <ChevronRightIcon strokeWidth={3} className="h-3 w-5" />
                                     </ListItemPrefix>
-                                    Products
+                                    Details Section 2
+                                </ListItem>
+                                <ListItem>
+                                    <ListItemPrefix>
+                                        <ChevronRightIcon strokeWidth={3} className="h-3 w-5" />
+                                    </ListItemPrefix>
+                                    Details Section 3
                                 </ListItem>
                             </List>
                         </AccordionBody>
@@ -150,37 +160,16 @@ export default function Sidebar() {
                         </ListItemPrefix>
                         Settings
                     </ListItem>
-                    <ListItem>
+                    <ListItem onClick={() => {
+                        localStorage.clear()
+                        window.location.replace('/')
+                    }}>
                         <ListItemPrefix>
                             <PowerIcon className="h-5 w-5" />
                         </ListItemPrefix>
                         Log Out
                     </ListItem>
                 </List>
-                {/* <Alert open={openAlert} className="mt-auto" onClose={() => setOpenAlert(false)}>
-                    <CubeTransparentIcon className="mb-4 h-12 w-12" />
-                    <Typography variant="h6" className="mb-1">
-                        Upgrade to PRO
-                    </Typography>
-                    <Typography variant="small" className="font-normal opacity-80">
-                        Upgrade to Material Tailwind PRO and get even more components, plugins, advanced features
-                        and premium.
-                    </Typography>
-                    <div className="mt-4 flex gap-3">
-                        <Typography
-                            as="a"
-                            href="#"
-                            variant="small"
-                            className="font-medium opacity-80"
-                            onClick={() => setOpenAlert(false)}
-                        >
-                            Dismiss
-                        </Typography>
-                        <Typography as="a" href="#" variant="small" className="font-medium">
-                            Upgrade Now
-                        </Typography>
-                    </div>
-                </Alert> */}
             </Card>
         </Suspense>
     )

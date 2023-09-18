@@ -8,8 +8,12 @@ import {
 } from "@material-tailwind/react";
 import ShowAlert from "../../utils/helpers/ShowAlert";
 import { error_message, success_message } from "../../utils/constants/message";
+import { useNavigate } from "react-router-dom";
 
 export default function Login() {
+  //* import react router dom
+  const navigate = useNavigate()
+
   //? name email password access to .env file
   let env_name = import.meta.env.VITE_API_NAME
   let env_email = import.meta.env.VITE_API_EMAIL
@@ -40,7 +44,7 @@ export default function Login() {
         console.log('authToken :>> ', authToken);
         localStorage.setItem("authToken", authToken);
         ShowAlert("success", success_message)
-        window.location.replace('/')
+        navigate('/')
       } else {
         throw ("Invalid email or password");
       }

@@ -29,6 +29,7 @@ import {
     // MagnifyingGlassIcon,
 } from "@heroicons/react/24/outline";
 import Loader from '../../utils/helpers/Spinner';
+import ShowAlert from '../../utils/helpers/ShowAlert';
 
 
 export default function Sidebar() {
@@ -38,6 +39,13 @@ export default function Sidebar() {
     const handleOpen = (value) => {
         setOpen(open === value ? 0 : value);
     };
+
+
+    const handleLogout = () => {
+        const authToken = false;
+        localStorage.setItem("authToken", authToken);
+        ShowAlert("success", "Successfully Logout...!")
+    }
     return (
         <Suspense fallback={<Loader />}>
             <Card className="h-[calc(100vh-2rem)] w-full max-w-[20rem] p-4 shadow-xl shadow-blue-gray-900/5">
@@ -160,10 +168,7 @@ export default function Sidebar() {
                         </ListItemPrefix>
                         Settings
                     </ListItem>
-                    <ListItem onClick={() => {
-                        localStorage.clear()
-                        window.location.replace('/')
-                    }}>
+                    <ListItem onClick={() => handleLogout()}>
                         <ListItemPrefix>
                             <PowerIcon className="h-5 w-5" />
                         </ListItemPrefix>

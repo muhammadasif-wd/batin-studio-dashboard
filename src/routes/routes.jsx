@@ -1,8 +1,7 @@
 import { lazy } from "react";
-const Login = lazy(() => import("../services/auth/Login"));
-const Home = lazy(() => import("../pages/home/Home"));
-const authUser = localStorage.getItem("authToken")
+const Contact = lazy(() => import("../pages/Contact"));
+
 
 export const routes = [
-    { _id: "h-o-m-e-1", path: "/", Component: authUser ? Home : Login },
+    { _id: "contact-1", path: "contact", Component: Contact },
 ]

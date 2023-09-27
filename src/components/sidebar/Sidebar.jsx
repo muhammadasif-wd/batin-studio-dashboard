@@ -42,8 +42,8 @@ export default function Sidebar() {
 
 
     const handleLogout = () => {
-        const authToken = false;
-        localStorage.setItem("authToken", authToken);
+        const auth_token = false;
+        localStorage.setItem("auth_token", auth_token);
         ShowAlert("success", "Successfully Logout...!")
     }
     return (

@@ -1182,31 +1182,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"batin-studio-admin@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "batin-studio-admin@workspace:."
-  dependencies:
-    "@heroicons/react": ^2.0.18
-    "@material-tailwind/react": ^2.1.2
-    "@types/react": ^18.2.15
-    "@types/react-dom": ^18.2.7
-    "@vitejs/plugin-react": ^4.0.3
-    autoprefixer: ^10.4.15
-    eslint: ^8.49.0
-    eslint-plugin-react: ^7.33.2
-    eslint-plugin-react-hooks: ^4.6.0
-    eslint-plugin-react-refresh: ^0.4.3
-    postcss: ^8.4.29
-    react: ^18.2.0
-    react-dom: ^18.2.0
-    react-router-dom: ^6.16.0
-    recharts: ^2.8.0
-    sweetalert2: ^11.7.28
-    tailwindcss: ^3.3.3
-    vite: ^4.4.5
-  languageName: unknown
-  linkType: soft
-
 "binary-extensions@npm:^2.0.0":
   version: 2.2.0
   resolution: "binary-extensions@npm:2.2.0"
@@ -1563,6 +1538,31 @@ __metadata:
   checksum: 1cfddf86d7bca22f73f2c427f52dfa35c49f50d64e187eb788dcad6e927625c636aa18ae4edd44d084eb9d1f81d8ca4ec305dae7f733c15846a824575b789d73
   languageName: node
   linkType: hard
+
+"dashboard@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "dashboard@workspace:."
+  dependencies:
+    "@heroicons/react": ^2.0.18
+    "@material-tailwind/react": ^2.1.2
+    "@types/react": ^18.2.15
+    "@types/react-dom": ^18.2.7
+    "@vitejs/plugin-react": ^4.0.3
+    autoprefixer: ^10.4.15
+    eslint: ^8.49.0
+    eslint-plugin-react: ^7.33.2
+    eslint-plugin-react-hooks: ^4.6.0
+    eslint-plugin-react-refresh: ^0.4.3
+    postcss: ^8.4.29
+    react: ^18.2.0
+    react-dom: ^18.2.0
+    react-router-dom: ^6.16.0
+    recharts: ^2.8.0
+    sweetalert2: ^11.7.28
+    tailwindcss: ^3.3.3
+    vite: ^4.4.5
+  languageName: unknown
+  linkType: soft
 
 "debug@npm:4, debug@npm:^4.1.0, debug@npm:^4.1.1, debug@npm:^4.3.2, debug@npm:^4.3.3":
   version: 4.3.4

@@ -41,8 +41,8 @@ export default function Login() {
       if (name === env_name && email === env_email && password === env_password) {
         // Authentication successful.
         const authToken = true;
-        console.log('authToken :>> ', authToken);
-        localStorage.setItem("authToken", authToken);
+        console.log('auth_token :>> ', authToken);
+        localStorage.setItem("auth_token", authToken);
         ShowAlert("success", success_message)
         navigate('/')
       } else {
